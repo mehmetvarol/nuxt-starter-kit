@@ -1,8 +1,13 @@
 <template lang="pug">
-.wrapper
-  .card
-    h1.title
-      span.text-emerald-800 NUXT JS & TailwindCss v2.0
+.container
+  .wrapper
+    .card
+      h1.title
+        span.text-emerald-800 NUXT JS & TailwindCss v2.0
+  .wrapper
+    .card
+      h1.title
+        span.text-emerald-800 NUXT JS & TailwindCss v2.0
 </template>
 
 <script>
