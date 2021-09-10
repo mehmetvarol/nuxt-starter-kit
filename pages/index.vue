@@ -3,7 +3,7 @@
   .wrapper
     .card
       h1.title
-        span.text-emerald-800 NUXT JS & TailwindCss v2.0
+        span.text-emerald-800 {{varible}}
   .wrapper
     .card
       h1.title
@@ -11,7 +11,18 @@
 </template>
 
 <script>
-export default {};
+import { defineComponent, ref } from "@nuxtjs/composition-api";
+
+export default defineComponent({
+  setup() {
+    const varible = ref("merhba");
+    console.log('varible:', varible.value);
+
+    return {
+      varible
+    };
+  }
+});
 </script>
 
 <style lang="scss">
@@ -26,4 +37,5 @@ export default {};
     @apply text-6xl font-bold;
   }
 }
+
 </style>
